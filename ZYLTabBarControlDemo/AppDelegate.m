@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZYLTabBarController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    ViewController *vc1 = [[ViewController alloc]init];
+    vc1.view.backgroundColor = [UIColor redColor];
+    
+    ViewController *vc2 = [[ViewController alloc]init];
+    vc2.view.backgroundColor = [UIColor blueColor];
+    
+    ViewController *vc3 = [[ViewController alloc]init];
+    vc3.view.backgroundColor = [UIColor greenColor];
+    
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc1];
+    
+    ZYLTabBarController *tabbarControl = [[ZYLTabBarController alloc]init];
+    [tabbarControl setViewControllers:@[nav1,vc2,vc3]];
+    
+    [tabbarControl changeItemForItemArray:^(NSArray<ZYLTabBarItem *> *array) {
+        [array enumerateObjectsUsingBlock:^(ZYLTabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            obj.label.text = [NSString stringWithFormat:@"第%ld个控制器",idx];
+        }];
+    }];
+    self.window.rootViewController = tabbarControl;
+    [self.window makeKeyWindow];
     return YES;
 }
 

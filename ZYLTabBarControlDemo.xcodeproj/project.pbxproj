@@ -16,6 +16,11 @@
 		2EFA88451D1CDA1E00A03E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA88431D1CDA1E00A03E62 /* LaunchScreen.storyboard */; };
 		2EFA88501D1CDA1E00A03E62 /* ZYLTabBarControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA884F1D1CDA1E00A03E62 /* ZYLTabBarControlDemoTests.m */; };
 		2EFA885B1D1CDA1E00A03E62 /* ZYLTabBarControlDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA885A1D1CDA1E00A03E62 /* ZYLTabBarControlDemoUITests.m */; };
+		2EFA886B1D1CDA5400A03E62 /* ZYLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA886A1D1CDA5400A03E62 /* ZYLTabBarItem.m */; };
+		2EFA886E1D1CDAEF00A03E62 /* ZYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA886D1D1CDAEF00A03E62 /* ZYLTabBar.m */; };
+		2EFA88711D1CDC3700A03E62 /* ZYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA88701D1CDC3700A03E62 /* ZYLTabBarController.m */; };
+		2EFA88771D1CDFAE00A03E62 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA88761D1CDFAE00A03E62 /* TwoViewController.m */; };
+		2EFA887A1D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA88791D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		2EFA88561D1CDA1E00A03E62 /* ZYLTabBarControlDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYLTabBarControlDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFA885A1D1CDA1E00A03E62 /* ZYLTabBarControlDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLTabBarControlDemoUITests.m; sourceTree = "<group>"; };
 		2EFA885C1D1CDA1E00A03E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFA88691D1CDA5400A03E62 /* ZYLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLTabBarItem.h; sourceTree = "<group>"; };
+		2EFA886A1D1CDA5400A03E62 /* ZYLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLTabBarItem.m; sourceTree = "<group>"; };
+		2EFA886C1D1CDAEF00A03E62 /* ZYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLTabBar.h; sourceTree = "<group>"; };
+		2EFA886D1D1CDAEF00A03E62 /* ZYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLTabBar.m; sourceTree = "<group>"; };
+		2EFA886F1D1CDC3700A03E62 /* ZYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLTabBarController.h; sourceTree = "<group>"; };
+		2EFA88701D1CDC3700A03E62 /* ZYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLTabBarController.m; sourceTree = "<group>"; };
+		2EFA88751D1CDFAE00A03E62 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		2EFA88761D1CDFAE00A03E62 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		2EFA88781D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZYLTabBarVC.h"; sourceTree = "<group>"; };
+		2EFA88791D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZYLTabBarVC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +118,13 @@
 		2EFA88311D1CDA1E00A03E62 /* ZYLTabBarControlDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2EFA88681D1CDA2C00A03E62 /* ZYLTabBar */,
 				2EFA88351D1CDA1E00A03E62 /* AppDelegate.h */,
 				2EFA88361D1CDA1E00A03E62 /* AppDelegate.m */,
 				2EFA88381D1CDA1E00A03E62 /* ViewController.h */,
 				2EFA88391D1CDA1E00A03E62 /* ViewController.m */,
+				2EFA88751D1CDFAE00A03E62 /* TwoViewController.h */,
+				2EFA88761D1CDFAE00A03E62 /* TwoViewController.m */,
 				2EFA883B1D1CDA1E00A03E62 /* Main.storyboard */,
 				2EFA88411D1CDA1E00A03E62 /* Assets.xcassets */,
 				2EFA88431D1CDA1E00A03E62 /* LaunchScreen.storyboard */,
@@ -141,6 +159,21 @@
 				2EFA885C1D1CDA1E00A03E62 /* Info.plist */,
 			);
 			path = ZYLTabBarControlDemoUITests;
+			sourceTree = "<group>";
+		};
+		2EFA88681D1CDA2C00A03E62 /* ZYLTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EFA88691D1CDA5400A03E62 /* ZYLTabBarItem.h */,
+				2EFA886A1D1CDA5400A03E62 /* ZYLTabBarItem.m */,
+				2EFA886C1D1CDAEF00A03E62 /* ZYLTabBar.h */,
+				2EFA886D1D1CDAEF00A03E62 /* ZYLTabBar.m */,
+				2EFA886F1D1CDC3700A03E62 /* ZYLTabBarController.h */,
+				2EFA88701D1CDC3700A03E62 /* ZYLTabBarController.m */,
+				2EFA88781D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.h */,
+				2EFA88791D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.m */,
+			);
+			name = ZYLTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFA886B1D1CDA5400A03E62 /* ZYLTabBarItem.m in Sources */,
 				2EFA883A1D1CDA1E00A03E62 /* ViewController.m in Sources */,
 				2EFA88371D1CDA1E00A03E62 /* AppDelegate.m in Sources */,
+				2EFA886E1D1CDAEF00A03E62 /* ZYLTabBar.m in Sources */,
 				2EFA88401D1CDA1E00A03E62 /* ZYLTabBarControlDemo.xcdatamodeld in Sources */,
+				2EFA88771D1CDFAE00A03E62 /* TwoViewController.m in Sources */,
+				2EFA887A1D1CE03F00A03E62 /* UIViewController+ZYLTabBarVC.m in Sources */,
 				2EFA88341D1CDA1E00A03E62 /* main.m in Sources */,
+				2EFA88711D1CDC3700A03E62 /* ZYLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
